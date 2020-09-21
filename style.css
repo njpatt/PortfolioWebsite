@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+    color: #1c354e;
+    
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+	height: 62px;
+	margin-top: -62px;
+	content: "";
+    display: block;
+    
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+	padding:  0rem 1rem !important;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+    background-color: rgba(255, 255, 255, 0.979)!important;
+    opacity: 95%;
+
+}
+.navbar-brand img {
+    height: 5rem;
+    padding-bottom: 0;
+}
+.navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: rgb(79, 199, 183);
+}
+.svg-inline--fa.fa-w-14 {
+	color: white;
+	font-size: 1.6rem;
+}
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+/*=============== LANDING PAGE====change the picture later =======*/
+.home-inner {
+    background-image: url('img/bkroundimg.jpg');
+    opacity: .84;
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute; 
+    top: 51%;
+    z-index: 1;
+}
+.caption h3{
+    color:rgb(246, 249, 250);
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.btn {
+    border-width: medium;
+    border-radius: 0;
+    margin: 2rem 2rem;
+    padding: .5rem 1.1rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+/*=============== About Secction =======*/
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 3rem 0 3rem;
+}
+.narrow{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+h3.heading{
+    font-size: 1.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.about .svg-inline--fa{
+    color: rgba(112, 171, 206, 0.863);
+    margin: 1rem auto;
+}
+.about h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
+.about p {
+    font-size: 1.1rem;
+}
+
+/*============= Portfolio Section =============*/
+.padding{
+    padding: 2rem 0;
+}
+
+.no-padding [class*=col-] {
+    padding: 0;
+}
+img.example-image{
+    max-width: 100%;
+}
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+.portfolio-item img{
+    transition: transform .4s ease;
+    
+}
+.portfolio-item {
+    overflow: hidden;
+}
+/*============= Testimonials(Skills) =============*/
+.card{
+    margin: 0 1rem;
+    border-radius: 0;
+    background-color:  rgba(195, 199, 206, 0.801);
+}
+.card-img-top{
+    border-radius: 0; 
+}
+.card h4{
+    font-weight: 700;
+}
+.card h5{
+    color: rgba(0, 0, 0, 0.863);
+}
+.skills{
+    text-align: left;
+    margin: 0 1rem;
+}
+.card-img-bottom{
+    height: 25.5vh;
+    width: 25.5vh;
+    border-radius: 0;
+}
+/*============= Contact =============*/
+
+.footer .row{
+    background-color: rgba(65, 122, 160, 0.801);
+    padding: 1rem 2rem 3rem;
+    color: white;
+}
+.footer img{
+    height: 2rem;
+    margin: 1.5rem 0;
+}
+.footer a{
+    color: white;
+}
+.footer svg.svg-inline--fa {
+    margin: 1.2rem .5rem 0 0;
+}
+.footer svg.svg-inline--fa:hover{
+    color: #00B3FF!important;
+}
+.footer h3{
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+.footer p{
+    margin: 1.5rem 0;
+    text-align:center;
+}
+
+
+/* -- Dark Mode Settting//*/
+.darkmode--activated p, .darkmode--activated li {
+    color: rgb(255, 254, 254);
+  }
+ .footer{
+ 
+        isolation: isolate;
+
+ }
+ .btn-secondary{
+     isolation: isolate;
+ }
+  .darkmode--activated .logo {
+    mix-blend-mode: difference;
+  }
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
